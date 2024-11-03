@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dashboardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="36dp"
+                android:text="Dulara Akalanka \nBsit211005"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="38dp"
+                android:src="@drawable/pp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewTopLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's Next?"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mobile Application Development Quiz"
+                android:textColor="#0F2147"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewBottomRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Day to Go!"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/videw2"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <ImageView
+        android:id="@+id/imageVddiew3"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videw2"
+        app:layout_constraintEnd_toEndOf="@+id/videw2"
+        app:srcCompat="@drawable/syllabus" />
+
+    <TextView
+        android:id="@+id/teddxtView7"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        android:text="Syllabus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/videw2"
+        app:layout_constraintEnd_toEndOf="@+id/videw2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/view3"
+        android:layout_alignEnd="@+id/view3"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:srcCompat="@drawable/calender" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view3"
+        android:layout_alignBottom="@+id/view3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:text="Calendar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videw2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/view9"
+        android:layout_alignEnd="@+id/view9"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view9"
+        app:srcCompat="@drawable/test" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/view9"
+        android:layout_alignBottom="@+id/view9"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="36dp"
+        android:text="Tests"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/view10"
+        android:layout_alignEnd="@+id/view10"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:srcCompat="@drawable/insights" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="78dp"
+        android:layout_height="57dp"
+        android:layout_alignEnd="@+id/view10"
+        android:layout_alignBottom="@+id/view10"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="12dp"
+        android:text="Insights"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <ImageView
+
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/view10"
+        android:layout_alignEnd="@+id/view10"
+
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:srcCompat="@drawable/about" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="36dp"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="170dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_launcher_background_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <ImageView
+
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/view10"
+        android:layout_alignEnd="@+id/view10"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:srcCompat="@drawable/support" />
+
+    <TextView
+        android:layout_width="92dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="12dp"
+        android:text="Support"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
